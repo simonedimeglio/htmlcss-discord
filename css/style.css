@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    background: url(../img/jumbo.png) center;
+    background-size: cover;
+    height: 500px;
+    padding-top: 20px;
+}
+
+nav.topbar {
+    height: 34px;
+    line-height: 34px;
+    color: white;
+}
+
+nav.topbar .discord-logo, nav.topbar .login {
+    width: 25%;
+    height: 100%;
+}
+
+nav.topbar .navigation {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+nav.topbar .menu li {
+    display: inline-block;
+    margin-left: 25px;
+}
