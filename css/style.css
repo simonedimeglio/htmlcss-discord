@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
 }
-
+body {
+    font-family: 'Roboto', sans-serif;
+}
 .clearfix::after {
     content: "";
     display: table;
@@ -13,7 +15,6 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    border: 5px solid red;
 }
 
 .fl {
@@ -85,9 +86,9 @@ nav.topbar .navigation li {
     text-align: center;
 }
 
-.jumbo-buttons .button {
+.button {
     display: inline-block;
-    width: 200px;
+    width: 250px;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -96,27 +97,91 @@ nav.topbar .navigation li {
 
 #button-1 {
     color: black;
-    background-color: white;
+    background-color: rgba(255,255,255,255);
 }
 
 #button-2 {
     color: white;
-    background-color: black;
+    background-color: rgba(35,39,42,255);
 }
 
-.main-img {
+#button-3 {
+    margin-top: 20px;
+    color: white;
+    background-color: #8ea1e1;
+}
+
+
+.main-img-float {
     width: 60%;
 }
 
-.main-txt {
+.main-txt-float {
     width: 40%;
     height: 100%;
     padding: 0 150px;
 }
 
-.main-txt h2 {
+.main-txt-float h2 {
     margin-top: 40px;
 }
-.main-txt p {
+
+.main-txt-float p {
     margin-top: 20px;
+}
+
+.main-txt-regular {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.main-txt-regular p {
+    margin-top: 20px;
+}
+
+.main-img-regular {
+    text-align: center;
+}
+
+.bf-footer {
+    text-align: center;
+    position: relative;
+    margin: 50px 0 0 100px;
+}
+
+.bf-footer-txt {
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 15px;
+    width: 400px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+
+footer {
+    margin-top: 200px;
+    padding-top: 50px;
+    color: white;
+    background-color: rgba(35,39,42,255);
+}
+
+footer h3, footer h5 {
+    color:#7289da;
+}
+
+.section-1 {
+    width: 40%;
+}
+
+.section-2, .section-3, .section-4, .section-5 {
+    width: 15%;
+ 
+}
+
+footer br {
+    color: #6f85d3;
 }
